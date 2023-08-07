@@ -96,7 +96,7 @@ class PhotoDeputy(QMainWindow):
         about_dialog.setWindowTitle("About")
         about_dialog.setText(f"<p>Photo Deputy v1.0.0</p>"
                              f"<p>Made by NomadWithoutAHome</p>"
-                             f"<p><a href='https://github.com/example'>https://github.com/example</a></p>")
+                             f"<p><a href='https://bit.ly/PhotoDeputy'>https://bit.ly/PhotoDeputy</a></p>")
         about_dialog.show()
 
     def select_format(self):
