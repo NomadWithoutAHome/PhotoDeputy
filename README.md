@@ -39,4 +39,4 @@ Photo Deputy is a PyQt5-based image viewing and conversion tool.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the The Unlicense - see the [HERE](https://choosealicense.com/licenses/unlicense/)  for details.
