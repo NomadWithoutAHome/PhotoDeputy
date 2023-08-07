@@ -18,7 +18,7 @@ Photo Deputy is a PyQt5-based image viewing and conversion tool.
 - Click save button to convert individual photos can be saved as jpeg or png.
 - Convert images in bulk using the "Convert Folder" option in the "File" menu.
 
-**You must first select a folder via the `select folder` option in the file menu then select convert folder**
+**You must first select a folder via the `select folder` option in the file menu then select `convert folder`**
 
 ## Requirements 
 
