@@ -214,8 +214,9 @@ class PhotoDeputy(QMainWindow):
 
     def save_preview_image(self):
         index = self.file_list_box.currentRow()
-        if not self.file_list or index == -1 or index == self.file_list_box.count() - 1:  # don't save default or empty
+        if not self.file_list or index < 0 or index >= len(self.file_list):
             return
+
         filepath = self.file_list[index]
 
         save_path, _ = QFileDialog.getSaveFileName(self, "Save Image", "",
