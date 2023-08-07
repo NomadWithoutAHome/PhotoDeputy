@@ -3,7 +3,7 @@ import io
 from PyQt5.QtCore import Qt, pyqtSlot, QDir
 from PyQt5.QtGui import QImage, QPixmap, QIcon
 from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog, QListWidget, QListWidgetItem, QLabel, QPushButton, \
-    QVBoxLayout, QHBoxLayout, QMessageBox, QWidget, QFrame, QDesktopWidget
+    QVBoxLayout, QHBoxLayout, QMessageBox, QWidget, QFrame, QDesktopWidget, QProgressDialog
 
 
 class PhotoDeputy(QMainWindow):
@@ -242,12 +242,29 @@ class PhotoDeputy(QMainWindow):
         if not save_format:
             return
 
-        for file_path in self.file_list:
+        total_files = len(self.file_list)
+        progress_dialog = QProgressDialog("Converting Files...", "Cancel", 0, total_files, self)
+        progress_dialog.setWindowTitle("Conversion Progress")
+        progress_dialog.setWindowModality(
+            Qt.WindowModal)  # Ensure the progress dialog blocks interaction with other windows
+
+        converted_count = 0
+        for index, file_path in enumerate(self.file_list):
+            if progress_dialog.wasCanceled():
+                break
+
             img = self.read_image_file(file_path)
             filename, _ = os.path.splitext(os.path.basename(file_path))
             filename = f"{filename}.{save_format}"
             save_path = os.path.join(output_dir, filename)
             img.save(save_path)
+
+            converted_count += 1
+            progress_dialog.setValue(converted_count)
+            progress_dialog.setLabelText(f"Converting {converted_count} / {total_files} files...")
+            QApplication.processEvents()  # Allow Qt to process events and update the dialog
+
+        progress_dialog.close()
 
         QMessageBox.information(self, "Success", f"All images converted and saved in {output_dir}")
 
