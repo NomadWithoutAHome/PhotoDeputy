@@ -25,6 +25,10 @@ Photo Deputy is a PyQt5-based image viewing and conversion tool.
 - Python 3.11
 - PyQt5
 
+## Credit
+
+- [JD06450](https://github.com/JD06450/RDR2-Photo-Extractor) - RDR Photo Extractor , I converted his `convertFile` function to python.
+  
 ## Getting Started
 
 1. Clone the repository:
