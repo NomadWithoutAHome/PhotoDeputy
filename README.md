@@ -2,4 +2,4 @@
 ![alt text](https://i.imgur.com/3gO8Rje.png)
 
 
-#Readme WIP
+Readme is a wip
