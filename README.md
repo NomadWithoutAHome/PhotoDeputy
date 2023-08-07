@@ -3,6 +3,7 @@
 Photo Deputy is a PyQt5-based image viewing and conversion tool.
 
 ![alt text](https://i.imgur.com/OOxZw6T.png)
+![alt text](https://i.imgur.com/nsQ9ELF.png)
 
 ## Features
 
