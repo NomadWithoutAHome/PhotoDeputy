@@ -10,6 +10,18 @@ Photo Deputy is a PyQt5-based image viewing and conversion tool.
 - Preview images with options to view in full size
 - Convert images to different formats (JPEG, PNG)
 
+## Usage
+
+- Launch the application.
+- Use the "File" menu to select a folder containing images.
+- Browse and preview images in the list box.
+- Convert images using the "Convert Folder" option in the "File" menu.
+
+## Requirements 
+
+- Python 3.11
+- PyQt5
+
 ## Getting Started
 
 1. Clone the repository:
@@ -17,12 +29,6 @@ Photo Deputy is a PyQt5-based image viewing and conversion tool.
    ```bash
    git clone https://github.com/yourusername/photodeputy.git
    
-## Usage
-
-- Launch the application.
-- Use the "File" menu to select a folder containing images.
-- Browse and preview images in the list box.
-- Convert images using the "Convert Folder" option in the "File" menu.
 
 ## License
 
