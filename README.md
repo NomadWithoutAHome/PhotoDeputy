@@ -13,7 +13,8 @@ Photo Deputy is a PyQt5-based image viewing and conversion tool.
 ## Usage
 
 - Launch the application.
-- Use the "File" menu to select a folder containing images, they are usually found at `\Documents\Rockstar Games\Red Dead Redemption 2\Profiles\[YourProfileName]`
+- Use the "File" menu to select a folder containing images.
+- They are usually found at `\Documents\Rockstar Games\Red Dead Redemption 2\Profiles\[YourProfileName]`
 - Browse and preview images in the list box
 - Click save button to convert individual photos can be saved as jpeg or png.
 - Convert images in bulk using the "Convert Folder" option in the "File" menu.
