@@ -2,7 +2,8 @@
 
 Photo Deputy is a PyQt5-based image viewing and conversion tool.
 
-![alt text](https://i.imgur.com/3gO8Rje.png)
+![alt text](https://i.imgur.com/OOxZw6T.png)
+![alt text](https://i.imgur.com/nsQ9ELF.png)
 
 ## Features
 
@@ -14,6 +15,7 @@ Photo Deputy is a PyQt5-based image viewing and conversion tool.
 
 - Launch the application.
 - Use the "File" menu to select a folder containing images.
+- They are usually found at `\Documents\Rockstar Games\Red Dead Redemption 2\Profiles\[YourProfileName]`
 - Browse and preview images in the list box
 - Click save button to convert individual photos can be saved as jpeg or png.
 - Convert images in bulk using the "Convert Folder" option in the "File" menu.
@@ -24,15 +26,19 @@ Photo Deputy is a PyQt5-based image viewing and conversion tool.
 
 - Python 3.11
 - PyQt5
-
+  
 ## Getting Started
 
 1. Clone the repository:
 
    ```bash
    git clone https://github.com/yourusername/photodeputy.git
+
+## Credit
+
+- [JD06450](https://github.com/JD06450/RDR2-Photo-Extractor) - RDR Photo Extractor , I converted his `convertFile` function to python.
    
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the The Unlicense - see the [HERE](https://choosealicense.com/licenses/unlicense/)  for details.
